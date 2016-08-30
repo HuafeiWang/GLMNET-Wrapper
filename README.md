@@ -1,20 +1,20 @@
-This software package is a wrapper built around the [GLMNET library](https://web.stanford.edu/~hastie/glmnet/glmnet_alpha.html), which fits a generalized linear model via penalized maximum likelihood. The wrapper extends the GLMNET library specifically for bioinfomatics research, where input files conform to a specific format. A dockerized version of the software package can also be found on [Docker Hub](https://hub.docker.com). Docker allows the application to run independent of the host environment, as long as a [docker](https://www.docker.com) runtime has been installed on the local machine.
+This software package is a wrapper built around the [GLMNET library](https://web.stanford.edu/~hastie/glmnet/glmnet_alpha.html), which fits a generalized linear model via penalized maximum likelihood. The wrapper extends the GLMNET library specifically for bioinformatics research, where input files conform to specific formats. A dockerized version of the software package can also be found on [Docker Hub](https://hub.docker.com). Docker allows the application to run independently of the host environment, as long as a [docker](https://www.docker.com) runtime has been installed on the local machine.
 
 Input files
 ==================================================
-The software requires the input files to conform to a specific format. Any deviation can trigger an error message from the GLMNET wrapper.
+The software requires the input files to conform to specific formats. Any deviation can trigger an error message from the GLMNET wrapper.
 - Files are [comma-seperated values (csv)](https://en.wikipedia.org/wiki/Comma-separated_values) files.
 - Two files are required for the software package - one feature file and one clinical data file in most bioinformatics cases.
 
-The __feature file__, as the name suggests, contains features data. The first column is the feature names and each subsequent column contains data for each patient. The first row starting with keyword "Patient ID", uniquely labels each patient. The second row till the sixest row are reserved for feature file bookkeeping and should not contain any feature information - they will be ignored by the software package as it is assumed that the features start from the seventh row. If your feature file does not have those bookkeeping information, pad the second row through the sixest row with a proper number of commas.
+The __feature file__, as the name suggests, contains features data. The first column is the feature names and each subsequent column contains data for each patient. The first row starting with keyword "__Patient ID__", uniquely labels each patient. The second row through the sixest row are reserved for feature file bookkeeping and should not contain any feature information - they will be ignored by the software package as it is assumed that the features start from the seventh row. If your feature file does not have those bookkeeping information, pad the second row through the sixest row with a proper number of commas.
 
-The __clinical file__, on the other hand, contains output data. The clinical file has the same format as the feature file. The first column is the output names and each subsequent column contains data for each patient. The first row starting with keyword "Patient ID", uniquely labels each patient. No padding is necessary for the second row through the sixes row since the software will scan the file to find the output name of interest.
+The __clinical file__, on the other hand, contains output data. The clinical file has the same format as the feature file. The first column is the output names and each subsequent column contains data for each patient. The first row starting with keyword "__Patient ID__", uniquely labels each patient. No padding is necessary for the second row through the sixes row since the software will scan the file to find the output name of interest.
 
-Samples are included in the InputFileSample folder.
+Samples are included in the __InputFileSample__ folder.
 
 How to get started with the plain script
 =================================================
-- Download ./Code/DockerRScript/Dockerization/dockerRScript.R
+- Download ./dockerRScript.R
 - `Rscript dockerRScript.R [mode] [feature file path] [clinical file path] (output name of interest) (cvfit file path) [output file path] (cross-validation seed)`
 	- mode
 		- `-t`: training mode
@@ -25,8 +25,8 @@ How to get started with the plain script
 	- cvfit file path (__used only for prediction mode__): path to the file that contains the comprehensive raw training model data
 	- output file path: path to the folder where output model files will be generated
 	- cross-validation seed (__used only for training mode__)
-		- `-strue`: use a predefined seed
-		- `-sfalse`: use a random seed
+		- `-strue`: use a predefined seed for cross-validation
+		- `-sfalse`: use a random seed for cross-validation
 - Training mode example: `Rscript dockerRScript.R -t ./features.csv ./clinicaldata.csv 'EGFR mutation result' ./outputs -strue`
 - Prediction mode example: `Rscript dockerRScript.R -p ./features.csv ./clinicaldata.csv ./outputs/cvfit.RData ./outputs`
 
@@ -39,7 +39,8 @@ Running the docker application is almost the same as running the plain script. T
 	- docker machine folder: the folder name of the folder in your docker environment that will be synced with the local machine folder
 	- docker application name: the name of the docker application
 	- `-t -i` and `/bin/bash` allow you to access and navigate through the docker machine
-- Example: docker run -v /Users/user/Docker/test/:/tmp/ -t -i training /bin/bash
+- Example: `docker run -v /Users/user/Docker/test/:/tmp/ -t -i training /bin/bash`
+
 Once you are in the docker machine, calling the script to train or predict is the same as running the plain script. 
 
 Output
@@ -50,7 +51,7 @@ In the training mode, the output files are __model.csv__, __cvfit.RData__ and __
 
 In the prediction mode, the output file is __prediction.csv__. The file contains all patients names and their associated prediction outcomes.
 
-Samples are included in the OutputFileSample folder.
+Samples are included in the __OutputFileSample__ folder.
 
 Dockerize the application
 =================================================
