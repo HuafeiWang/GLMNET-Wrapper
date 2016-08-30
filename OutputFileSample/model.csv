@@ -1,0 +1,200 @@
+Intercept,-0.885290594650251
+Intensity Entropy,0
+Intensity Harmonic Mean,0
+Intensity Mean,0
+Intensity Median,0
+Intensity Mode,0
+Intensity Trimmed Mean (25%),0
+Intensity Inerquartile Difference,0
+Intensity Mean Absolute Difference,0
+Intenisty Range,0
+Intensity Standard Deviation,-0.000748814507085416
+Intensity Kurtosis,0
+Intensity Skewness,0
+Intensity Max,0
+Intensity Min,0
+Intensity Under -291 HU,0
+Intensity Over -291 HU,0
+Intensity Under -291 HU Percentage,0
+Intensity Over -291 HU Percentage,0
+Sphericity,0
+Surface Area (mm^2),0
+Volume Area  (mm^3),0
+LVII Geometric Mean R = 1,0
+LVII Harmonic Mean R = 1,0
+LVII Mean R = 1,0
+LVII Median R = 1,0
+LVII Mode R = 1,0
+LVII Trimmed Mean (25%) R = 1,0
+LVII Interquartile Difference R = 1,0
+LVII Mean Absolute Difference R= 1,0
+LVII Standard Deviation R = 1,0
+LVII Range R = 1,0
+LVII Kurtosis R = 1,0
+LVII Skewness R = 1,0
+LVII Max R = 1,0
+LVII Min R = 1,0
+LVII Geometric Mean R = 2,0
+LVII Harmonic Mean R = 2,0
+LVII Mean R = 2,0
+LVII Median R = 2,0
+LVII Mode R = 2,0
+LVII Trimmed Mean (25%) R = 2,0
+LVII Interquartile Difference R = 2,0
+LVII Mean Absolute Difference R= 2,0
+LVII Standard Deviation R = 2,0
+LVII Range R = 2,0
+LVII Kurtosis R = 2,0
+LVII Skewness R = 2,0
+LVII Max R = 2,0
+LVII Min R = 2,0
+LVII Geometric Mean R = 3,0
+LVII Harmonic Mean R = 3,0
+LVII Mean R = 3,0
+LVII Median R = 3,0
+LVII Mode R = 3,0
+LVII Trimmed Mean (25%) R = 3,0
+LVII Interquartile Difference R = 3,0
+LVII Mean Absolute Difference R= 3,0
+LVII Standard Deviation R = 3,0
+LVII Range R = 3,0
+LVII Kurtosis R = 3,0
+LVII Skewness R = 3,0
+LVII Max R = 3,0
+LVII Min R = 3,0
+LVII Geometric Mean R = 4,0
+LVII Harmonic Mean R = 4,0
+LVII Mean R = 4,0
+LVII Median R = 4,0
+LVII Mode R = 4,0
+LVII Trimmed Mean (25%) R = 4,0
+LVII Interquartile Difference R = 4,0
+LVII Mean Absolute Difference R= 4,0
+LVII Standard Deviation R = 4,0
+LVII Range R = 4,0
+LVII Kurtosis R = 4,0
+LVII Skewness R = 4,0
+LVII Max R = 4,0
+LVII Min R = 4,0
+LVII Geometric Mean R = 5,0
+LVII Harmonic Mean R = 5,0
+LVII Mean R = 5,0
+LVII Median R = 5,0
+LVII Mode R = 5,0
+LVII Trimmed Mean (25%) R = 5,0
+LVII Interquartile Difference R = 5,0
+LVII Mean Absolute Difference R= 5,0
+LVII Standard Deviation R = 5,0
+LVII Range R = 5,0
+LVII Kurtosis R = 5,0
+LVII Skewness R = 5,0
+LVII Max R = 5,0
+LVII Min R = 5,0
+Roughness Mean Radius,0
+Roughness Average Absolute difference,0
+Roughness Root Mean Squared,0
+Roughness Maximum Valley Depth,0
+Roughness Maximum Peak Height,0
+Roughness Maximum Height of Profile,0
+Roughness Skewness,0
+Roughness Kurtosis,0
+Edge Discarded (Percentage),0
+Edge Window Harmonic Mean,0
+Edge Window Mean,1.04629433716195
+Edge Window Median,0
+Edge Window Mode,0
+Edge Window Trimmed Mean (25%),1.15348363617471
+Edge Window Inerquartile Difference,0
+Edge Window Mean Absolute Difference,0
+Edge Window Range,0
+Edge Window Standard Deviation,0
+Edge Window Kurtosis,0
+Edge Window Skewness,0
+Edge Window Max,0
+Edge Window Min,0
+Edge Scale Harmonic Mean,0.000251743542365507
+Edge Scale Mean,0
+Edge Scale Median,0
+Edge Scale Mode,0
+Edge Scale Trimmed Mean (25%),0
+Edge Scale Inerquartile Difference,0
+Edge Scale Mean Absolute Difference,0
+Edge Scale Range,0
+Edge Scale Standard Deviation,0
+Edge Scale Kurtosis,0
+Edge Scale Skewness,0
+Edge Scale Max,0
+Edge Scale Min,0
+Haralick D=1mm mean energy,0
+Haralick D=1mm mean entropy,0
+Haralick D=1mm mean correlation,0
+Haralick D=1mm mean contrast,0
+Haralick D=1mm mean homogeneity,0
+Haralick D=1mm mean variance,0
+Haralick D=1mm mean sum of means,0
+Haralick D=1mm mean inertia,0
+Haralick D=1mm mean cluster shade,0
+Haralick D=1mm mean cluster tendency,0
+Haralick D=1mm mean max probability,0
+Haralick D=1mm mean inverse variance,0
+Haralick D=2mm mean energy,0
+Haralick D=2mm mean entropy,0
+Haralick D=2mm mean correlation,0
+Haralick D=2mm mean contrast,0
+Haralick D=2mm mean homogeneity,0
+Haralick D=2mm mean variance,0
+Haralick D=2mm mean sum of means,0
+Haralick D=2mm mean inertia,0
+Haralick D=2mm mean cluster shade,0
+Haralick D=2mm mean cluster tendency,0
+Haralick D=2mm mean max probability,0
+Haralick D=2mm mean inverse variance,0
+Haralick D=3mm mean energy,0
+Haralick D=3mm mean entropy,0
+Haralick D=3mm mean correlation,0
+Haralick D=3mm mean contrast,0
+Haralick D=3mm mean homogeneity,0
+Haralick D=3mm mean variance,0
+Haralick D=3mm mean sum of means,0
+Haralick D=3mm mean inertia,0
+Haralick D=3mm mean cluster shade,0
+Haralick D=3mm mean cluster tendency,0
+Haralick D=3mm mean max probability,0
+Haralick D=3mm mean inverse variance,0
+Haralick D=1mm std energy,0
+Haralick D=1mm std entropy,0
+Haralick D=1mm std correlation,0
+Haralick D=1mm std contrast,0
+Haralick D=1mm std homogeneity,0
+Haralick D=1mm std variance,0
+Haralick D=1mm std sum of means,0
+Haralick D=1mm std inertia,0
+Haralick D=1mm std cluster shade,0
+Haralick D=1mm std cluster tendency,0
+Haralick D=1mm std max probability,0
+Haralick D=1mm std inverse variance,0
+Haralick D=2mm std energy,0
+Haralick D=2mm std entropy,0
+Haralick D=2mm std correlation,0
+Haralick D=2mm std contrast,0
+Haralick D=2mm std homogeneity,0
+Haralick D=2mm std variance,0
+Haralick D=2mm std sum of means,0
+Haralick D=2mm std inertia,0
+Haralick D=2mm std cluster shade,0
+Haralick D=2mm std cluster tendency,0
+Haralick D=2mm std max probability,0
+Haralick D=2mm std inverse variance,0
+Haralick D=3mm std energy,0
+Haralick D=3mm std entropy,0
+Haralick D=3mm std correlation,0
+Haralick D=3mm std contrast,0
+Haralick D=3mm std homogeneity,0
+Haralick D=3mm std variance,0
+Haralick D=3mm std sum of means,0
+Haralick D=3mm std inertia,0
+Haralick D=3mm std cluster shade,0
+Haralick D=3mm std cluster tendency,0
+Haralick D=3mm std max probability,0
+Haralick D=3mm std inverse variance,0
+Maximum Slice (Z index),0
