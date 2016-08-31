@@ -1,9 +1,9 @@
-# Convert the gene_text to an integer
-convert_text_to_integer <- function(text) { # <----------------------------------------------
-	if (text == '') {
-		return (-1)
-	} else {
+# Convert text to a numeric value if possible, return -1 if not available
+convert_text_to_integer <- function(text) {
+	if (!is.na(as.numeric(text))) {
 		return (as.numeric(text))
+	} else {
+		return (-1)
 	}
 }
 
@@ -38,7 +38,7 @@ process_clinical_data <- function(clinical_lines, target_output) {
 
 # Construct the training matrix for glmnet training
 get_training_matrix <- function(feature_lines, id_output_map) {
-	feature_start_index <- 7 # <----------------------------------------
+	feature_start_index <- 7 # <---------------------------------------- !!! Hard-coded starting row index!!!
 	
 	# Collect patients IDs
 	patient_ids <- c()
@@ -80,7 +80,7 @@ get_training_matrix <- function(feature_lines, id_output_map) {
 
 # Construct the prediction matrix for glmnet prediction
 get_prediction_matrix <- function(feature_lines, clinical_lines) {
-	feature_start_index <- 7 # <----------------------------------------
+	feature_start_index <- 7 # <----------------------------------------!!! Hard-coded starting row index!!!
 
 	# Collect patients IDs
 	patient_ids <- c()
@@ -137,7 +137,6 @@ glm_training <- function(training_matrix, feature_names, output_path) {
 	coefs <- coef(cvfit, s = cvfit$lambda.min)
 	# Output the model coefficients
 	model_matrix_entries <- c()
-	# <------------------------------------------- Replace with R funciton if possible
 	for (i in 1 : length(feature_names)) {
 		# Append feature name
 		model_matrix_entries <- append(model_matrix_entries, feature_names[i])
@@ -161,7 +160,6 @@ glm_prediction <- function(prediction_matrix, cvfit, patient_ids, output_path) {
 	print ('GLMNET Wrapper Log: glmnet predicting...')
 	# Import the glmnet package
 	library(glmnet)
-	# print (prediction_matrix)
 	y_predict <- predict(cvfit, newx = prediction_matrix, type = 'class', s = 'lambda.min')
 	output_matrix_entries <- c()
 	for (i in 1 : length(patient_ids)) {
